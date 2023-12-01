@@ -27,7 +27,8 @@ class _NewItemState extends State<NewItem> {
                   label: Text("Name"),
                 ),
                 validator: (value) {
-                  return "demo..";
+                  if(value==null||value.isEmpty)
+                  return 'Error Message';
                 },
               ),
               Row(
